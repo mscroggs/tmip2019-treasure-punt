@@ -1,0 +1,13 @@
+.*.swp
+*.aux
+*.log
+*.synctex.gz
+*.bbl
+*.blg
+*.out
+*.psd
+*.tex~
+*.pdf
+*.autosave
+*(busy)
+.DS_Store
