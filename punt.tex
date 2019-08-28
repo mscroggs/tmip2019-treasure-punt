@@ -1,3 +1,4 @@
+%7111 = solution
 \documentclass[11pt]{article}
 \usepackage[top=8mm, bottom=8mm, inner=8mm, outer=8mm, 
 headheight=0mm, headsep=0mm, footskip=0mm, 
@@ -10,6 +11,10 @@ includeheadfoot
 \usepackage{lipsum}
 \usepackage{fontspec}
 \usepackage{xcolor}
+\usepackage[math-style=ISO,bold-style=ISO]{unicode-math}
+
+\setmathfont[version=default,NFSSFamily=mathfont]{Libertinus Math}
+\mathversion{default}
 
 \definecolor{past1}{HTML}{eaa6a5}
 \definecolor{past2}{HTML}{ece1a5}
@@ -85,6 +90,7 @@ includeheadfoot
 \node[align=center] at (1.5,1.35) {Stand here\\to punt};
 \node[align=center,rotate=-90] at (9.8,1.35) {\tiny If you're in Oxford,\\[-2.3mm]\tiny stand here to punt};
 %\draw[line width=2pt] (0,0) -- plot[domain=4.44:4.98,variable=\t]({2.5+1*9.34*cos(\t r)},{9 + 9.34*sin(\t r)});
+\draw[line width=1pt,->] (11.4,1.35) -- (12.4,1.35) node[anchor=north] {$\symbfit{v}$};
 \end{tikzpicture}
 \end{center}
 
@@ -173,42 +179,41 @@ includeheadfoot
 
 \CDtitle{TMiP 2019 treasure punt}
 Four mathematicians---Ben, Katie, Kevin, and Sam---each have one of the four clues needed to unlock a great treasure.
-On a sunny/cloudy/rainy/snowy (delete as appropriate) they met up in Cambridge to go punting, share their clues, work out the combination for the lock,
-and share out the treasure. One or more of the mathematicians, however, had decided to lie about their clue so they could steal all the treasure for themselves.
+On a sunny/cloudy/rainy/snowy (delete as appropriate) day they meet up in Cambridge to go punting, share their clues, work out the code for the lock,
+and share out the treasure. One or more of the mathematicians, however, has decided to lie about their clue so they can steal all the treasure for themselves.
 At least one mathematician is telling the truth.*
 
+They meet at Cambridge Chauffeur Punts, and head North under Silver Street Bridge. Ben points out a plaque on the bridge with two years written on it:
 
-They met at Cambridge Chauffeur Punts, and headed North under Silver Street Bridge. Ben pointed out a plaque on the bridge with two years written on it:
-
-``My clue,'' he said, ''told me that the sum of the digits of the code is equal to the sum of the digits of the earlier year on that plaque. My clue also told me that one of the digits of the code is 7.''
+``My clue,'' he says, ``tells me that the sum of the digits of the code is equal to the sum of the digits of the earlier year on that plaque. My clue also tells me that at least one of the digits of the code is 7.''
 %1702
 
-The mathematicians next punted under the mathematical bridge, gasping in awe at its tangential trusses, then punted along the river under King's College Bridge and past King's College.
-Katie pointed to a sign on the King's College lawn near the river:
+The mathematicians next punt under the Mathematical Bridge, gasping in awe at its tangential trusses, then punt along the river under King's College Bridge and past King's College.
+Katie points to a sign on the King's College lawn near the river:
 
-``See that sign whose initials are PNM?'' said Katie. ``My clue stated that first digit of the code is equal to the number of vowels on that sign.
-My clue also told me that one of the digits of the code is 1.''
+``See that sign whose initials are PNM?'' says Katie. ``My clue states that first digit of the code is equal to the number of vowels on that sign.
+My clue also tells me that at least one of the digits of the code is 1.''
 %7
 
-They then reached Clare Bridge. Kevin pointed out the spheres on Clare bridge:
+They then reach Clare Bridge. Kevin points out the spheres on Clare Bridge:
 
-``My clue'' he said, ``stated that the number of spheres on (both sides of) this bridge is a factor of the code. My clue also told me that one of the digits of the code is 3.''
+``My clue,'' he says, ``states that the number of spheres on (both sides of) this bridge is a factor of the code. My clue also tells me that at least one of the digits of the code is 3.''
 %14
-(Kevin had not noticed that one of the spheres had a wedge missing, so had counted that as a whole sphere.)
+(Kevin has not noticed that one of the spheres had a wedge missing, so has counted that as a whole sphere.)
 
-They continued to punt past Clare College. Just before they reached Garret Hostel Bridge, Sam pointed out the Jerwood Library and a sign showing the year it was built:
+They continue past Clare College. Just before they reach Garret Hostel Bridge, Sam points out the Jerwood Library and a sign showing the year it was built:
 
-``My clue'' she said, ``said that the largest prime factor of that year appears$^\text{†}$ in the code.
-My clue also said that the smallest prime factor of that year appears in the code. My clue also told me that one of the digits of the code is 2.''
+``My clue,'' she says, ``says that the largest prime factor of that year appears$^\text{†}$ in the code.
+My clue also says that the smallest prime factor of that year appears in the code. My clue also told me that at least one of the digits of the code is 0.''
 %1998''
 
-They then punted under Garret Hostel Bridge, turned around between it and Trinity College Bridge, and headed back towards Cambridge Chauffeur Punts.
-The lies confused them and they couldn't unlock the treasure. Can you work out who was lying and claim the treasure for yourself?
+They then punt under Garret Hostel Bridge, turn around between it and Trinity College Bridge, and head back towards Cambridge Chauffeur Punts.
+\emph{Zut alors}, the lies confuse them and they can't unlock the treasure. Can you work out who is lying and claim the treasure for yourself?
 
 \vfill
 
 {\footnotesize *If the mathematicians say multiple sentences about their clue, then they are either all true or all false.\\[-1mm]
-$^\text{†}$In the same was as you might say the number 18 appears in 1018 or 2189.}
+$^\text{†}$In the same way that you might say the number 18 appears in 1018 or 2189.}
 \end{minipage}
 
 \newpage
@@ -222,8 +227,8 @@ $^\text{†}$In the same was as you might say the number 18 appears in 1018 or 2
 
 \begin{scope}
 \clip (0,5.2) arc (210:310:2.4) arc (130:90:15) -- (28,8.2) -- (28,6.6) -- (C) arc (90:130:10) arc (310:270:8) -- cycle;
-%\foreach \x in {0,...,50}
-%    \draw[blue] plot[domain=0:9,samples=500,variable=\y] ({0.5*\x+0.3+0.1*sin(\y*400)},{\y});
+\foreach \x in {0,...,70}
+    \draw[blue] plot[domain=0:9,samples=500,variable=\y] ({0.5*\x+0.3+0.1*sin(\y*400)},{\y});
 \end{scope}
 
 \begin{scope}
@@ -287,9 +292,6 @@ $^\text{†}$In the same was as you might say the number 18 appears in 1018 or 2
 
 \newcommand{\nodetext}[3][5cm]{
 \begin{minipage}{#1}\null\hfill\textbf{#2}\hfill\null\\#3\end{minipage}
-}
-\newcommand{\nodetextnotitle}[2][5cm]{
-\begin{minipage}{#1}#2\end{minipage}
 }
 
 \draw[->,line width=2pt] (3,10) node[anchor=south,align=center,inner sep=1pt] {\nodetext[4.5cm]{START}{Pick up your punt from Cambridge Chauffeur Punts}} -- (1.8,4.5);
