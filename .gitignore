@@ -11,3 +11,4 @@
 *.autosave
 *(busy)
 .DS_Store
+*.pyc
