@@ -1,14 +1,7 @@
-1702
-7
-14
-1998
-
-for i in range(1000,10000):
-    if "2" not in str(i) and "3" not in str(i) and "37" not in str(i):
-        if i%14 == 0:
-            if sum(int(a) for a in str(i)) == 10:
-                print(i)
-
+#1702
+#7
+#14
+#1998
 
 def ben(n):
     if sum(int(i) for i in str(n)) == 10 and "7" in str(n):

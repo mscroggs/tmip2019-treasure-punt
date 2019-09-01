@@ -4,3 +4,5 @@ On 31 August 2019, the [TMiP 2019](http://talkingmathsinpublic.uk/) treasure pun
 Groups of up to 6 people punted up the river Cam, and collected clues to the code of a comination lock they had been given.
 
 This repository contains the LaTeX code to make the instructions for the treasure punt, and a Python script that confirms that the puzzle has exactly one solution.
+
+Warning: comments in the TeX and Python files may reveal the solutions of the puzzles.
